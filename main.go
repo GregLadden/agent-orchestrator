@@ -148,7 +148,7 @@ func main() {
 	if port == "" {
 		port = "8081"
 	}
-	log.Printf("Agent Dispatch Service starting on port %s...", port)
+	log.Printf("Agent Orchestrator Service starting on port %s...", port)
 	if err := r.Run(":" + port); err != nil {
 		log.Fatalf("Failed to run HTTP server: %v", err)
 	}
